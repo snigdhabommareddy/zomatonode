@@ -133,7 +133,7 @@ app.get('/orders',(req,res)=>{
 })
 
 //place order(post)
-app.post('/placeOrder',(req,res) => {
+app.post('/placeorder',(req,res) => {
     //console.log(req.body)
     db.collection('orders').insert(req.body,(err,result) =>{
         if(err) throw err;
